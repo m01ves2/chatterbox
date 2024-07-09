@@ -17,3 +17,5 @@ dist/
 
 # workspace для VS Code
 *.code-workspace
+
+docs/source

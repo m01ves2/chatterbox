@@ -1,0 +1,64 @@
+<section class="modal-login">
+	<h2 class="section-header">Вход в личный кабинет</h2>
+	<p>Введите свой логин и пароль</p>
+	<form class="login-form" action="login.html" method="post">
+		<p>
+			<label for="login" class="form-label visually-hidden">Логин</label>
+			<input id="login" class="login" type="text" placeholder="логин">
+		</p>
+		<p>
+			<label for="password" class="form-label visually-hidden">Пароль</label>
+			<input id="password" class="password" type="password" placeholder="пароль">
+		</p>
+		<p>
+			<input id="remember" class="form-remember visually-hidden" type="checkbox">
+			<span class="checkbox-indicator"></span>
+			<label for="remember" class="form-label">Запомнить</label>
+		</p>
+		<p>
+			<a class="form-restore" href="#">Я забыл пароль!</a>
+		</p>
+		<input type="submit" class="button button-enter" value="Войти">
+	</form>
+	<button class="modal-close" type="button">Закрыть</button>
+</section>
+
+<section class="modal-signup">
+	<h2 class="section-header">Регистрация</h2>
+	<p>Разрешены: А-я, A-z, -, _ <br />
+		Cпец. символы запрещены. Цифры запрещены. <br />
+		Только латиница или только кириллица. Пробел заменяется подчеркиванием.
+		Осуществляется премодерация заявок.
+	</p>
+	<form class="signup" action="signup.html" method="post">
+		<p>
+			<label for="login" class="form-label visually-hidden"></label>
+			<input id="login" class="login" type="text" placeholder="логин">
+		</p>
+		<p>
+			<label for="password" class="form-label visually-hidden"></label>
+			<input id="password" class="password" type="password" placeholder="пароль">
+		</p>
+		<p>
+			<label for="email" class="form-label visually-hidden"></label>
+			<input id="email" class="email" type="email" placeholder="почта">
+		</p>
+		<p>
+		<ul class="sex">
+			<li>
+				<label for="male" class="form-label">мужчина</label>
+				<input id="male" type="radio" name="sex" value="мужчина" checked>
+			</li>
+			<li>
+				<label for="female" class="form-label">женщина</label>
+				<input id="female" type="radio" name="sex" value="женщина">
+			</li>
+		</ul>
+		</p>
+		<p>
+			<a class="form-recover" href="#">Уже есть аккаунт. Восстановить</a>
+		</p>
+		<input type="submit" class="button button-enter" value="Зарегистрировать">
+	</form>
+	<button class="modal-close" type="button">Закрыть</button>
+</section>

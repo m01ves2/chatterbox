@@ -1,18 +1,78 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-@@include('html/head.html', {
-"title": "Главная"
-})
+@@include('html/head.html', {"title": "Главная"})
 
 <body>
 
 	@@include('html/header.html', {})
-	<main>
-		<span>Чат болтушка!</span>
+
+	<main class="container">
+		<h1 class="page-header visually-hidden">Чат болтушка!</h1>
+
+		<section class="chat-enter">
+			<h2 class="section-header visually-hidden">Вход в чат</h2>
+			<form class="chat-form" action="chat.php" method="post">
+					<p>
+						<label for="nickname" class="form-label">Введите ваш ник в чате:</label>
+						<input class="chat-nickname" id="nickname" type="text" placeholder="ник в чате">
+					</p>
+					<p>
+						<!--TODO-->
+						<label for="channel" class="form-label">Выберите канал чата:</label>
+						<select class="channels-list" name="channels" id="channels">
+							<option class="channels-item" value="familiar">Знакомства</option>
+							<option class="channels-item" value="Sex">Секс</option>
+							<option class="channels-item" value="flirt">Флирт</option>
+							<option class="channels-item" value="art">Искусство</option>
+							<option class="channels-item" value="quiz">Викторина</option>
+							<option class="channels-item" value="free">Свобода</option>
+						</select>
+					</p>
+					<input type="submit" class="button button-enter" value="Войти в чат">
+			</form>
+		</section>
+
+		<section class="news">
+			<h2 class="section-header">Новости</h2>
+			<ul class="news-list">
+				<li class="news-item">
+					<time datetime="2024-07-09">09.07.2024</time>
+					<p>Написана базовая версия разметки</p>
+				</li>
+				<li class="news-item">
+					<time datetime="2024-07-07">07.07.2024</time>
+					<p>Ударными темпами начата работа над чатом!</p>
+				</li>
+			</ul>
+			<a class="button" href="news.html">Все новости</a>
+		</section>
+
+		<section class="search">
+			<h2 class="section-header">Анкеты пользователей</h2>
+			<ul class="search-list">
+				<li class="search-item"><a href="profiles.html" class="search-link">Поиск по анкетам</a></li>
+				<li class="search-item"><a href="my-profile.html" class="search-link">Моя анкета в чате</a></li>
+				<li class="search-item"><a href="signup.html" class="search-link">Регистрация в чате</a></li>
+				<li class="search-item"><a href="gallery.html" class="search-link">Фотогалерея чата</a></li> <!--javascript всплывающее окно с галареей-->
+			</ul>
+		</section>
+
+		<section class="rules">
+			<h2 class="section-header visually-hidden">Правила</h2>
+			<ul class="rules-list"><a href="licenses.html" class="rules-item">Лицензии канала</a></ul>
+			<ul class="rules-list"><a href="rules.html" class="rules-item">Правила чата</a></ul>
+		</section>
+
+		<section class="vote">
+			<h2 class="section-header">Голосование</h2>
+			<!--тут должен быть javascript код для голосовалки. Голосовалка создаётся любым админом чата-->
+		</section>
 	</main>
+
 	@@include('html/footer.html', {})
-<!--  -->
+	@@include('html/modal.html', {})
+
 	<script type="module" src="./js/app.min.js"></script>
 </body>
 

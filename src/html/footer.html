@@ -1,22 +1,33 @@
 <footer class="main-footer">
-	<p class="contacts">
-		<b>контактная информация</b>
-		<a href="mailto:eugeny.vlasov@gmail.com">
-			Напишите нам
-			<span class="visually-hidden">
-				на адрес eugeny.vlasov@gmail.com
-			</span>
-		</a>
-	</p>
-	<p class="social">
-		<ul>
-			<li><a class="social__button" href="#">Вконтакте</a></li>
-			<li><a class="social__button" href="#">Фейсбук</a></li>
-			<li><a class="social__button" href="#">Инстаграм</a></li>
-		</ul>
-	</p>
-	<p class="copyright">
-		<b>Разработано:</b>
-		<a class="button" href="#">2024. Eugeny Vlasov</a>
-	</p>
+	<div class="container">
+		<div class="main-footer-wrapper">
+			<p class="contacts main-footer__contacts">
+				<!--в contacts описываем стили блока, в main-footer__contacts описываем позицию блока contacts относительно main-footer-->
+				<b>контактная информация</b><br />
+				<a class="contacts__link" href="mailto:eugeny.vlasov@gmail.com">
+					Напишите нам <br />
+					<span class="visually-hidden">
+						на адрес eugeny.vlasov@gmail.com
+					</span>
+				</a>
+			</p>
+			<div class="social main-footer__social">
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link--vk" href="https://www.vk.com">Вконтакте</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--fb" href="https://www.facebook.com">Фейсбук</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--instagram" href="https://www.instagram.com">Инстаграм</a>
+					</li>
+				</ul>
+			</div>
+			<p class="copyright main-footer__copyright">
+				<b>Разработано:</b><br/>
+				<a class="copyright__link" href="#">2024. Eugeny Vlasov</a>
+			</p>
+		</div>
+	</div>
 </footer>

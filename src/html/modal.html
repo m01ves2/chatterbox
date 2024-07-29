@@ -1,7 +1,7 @@
 <section class="modal modal--login">
 	<h2 class="modal__header">Вход в личный кабинет</h2>
-	<p>Введите свой логин и пароль</p>
 	<form class="form form--login" action="login.html" method="post">
+		<p class="form__description">Введите свой логин и пароль</p>
 		<p>
 			<label for="login" class="form__label visually-hidden">Логин</label>
 			<input id="login" class="form__login" type="text" placeholder="логин">
@@ -20,7 +20,7 @@
 		</p>
 		<input type="submit" class="button button--enter" value="Войти">
 	</form>
-	<button class="modal__close" type="button">Закрыть</button>
+	<button class="button modal__close" type="button">Закрыть</button>
 </section>
 
 <section class="modal modal--signup">
@@ -46,12 +46,12 @@
 		<p>
 		<ul class="form__sex">
 			<li>
-				<label for="male" class="form__label">мужчина</label>
 				<input id="male" type="radio" name="sex" value="мужчина" checked>
+				<label for="male" class="form__label">мужчина</label>
 			</li>
 			<li>
-				<label for="female" class="form__label">женщина</label>
 				<input id="female" type="radio" name="sex" value="женщина">
+				<label for="female" class="form__label">женщина</label>
 			</li>
 		</ul>
 		</p>
@@ -60,5 +60,5 @@
 		</p>
 		<input type="submit" class="button button--enter" value="Зарегистрировать">
 	</form>
-	<button class="modal__close" type="button">Закрыть</button>
+	<button class="button modal__close" type="button">Закрыть</button>
 </section>

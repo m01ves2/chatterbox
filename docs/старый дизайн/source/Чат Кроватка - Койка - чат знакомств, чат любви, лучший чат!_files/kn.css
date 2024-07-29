@@ -1,0 +1,171 @@
+html {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+}
+body {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+}
+p {
+	color: rgb(255, 255, 255); font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+}
+td {
+	color: rgb(255, 255, 255); font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+}
+div {
+	color: rgb(255, 255, 255); font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+}
+span {
+	color: rgb(255, 255, 255); font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+input {
+	border: 1px solid rgb(99, 99, 99); border-image: none; height: 20px; color: rgb(99, 99, 99); font-size: 10px;
+}
+select {
+	border: 1px solid rgb(99, 99, 99); border-image: none; height: 20px; color: rgb(99, 99, 99); font-size: 10px;
+}
+a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul {
+	margin: 0px; padding: 0px 0px 0px 32px; color: rgb(255, 255, 255);
+}
+li {
+	list-style: none; margin: 0px; padding: 4px 0px; color: rgb(255, 255, 255);
+}
+li a {
+	color: rgb(255, 255, 255);
+}
+h1 {
+	margin: 0px; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-weight: bold;
+}
+h2 {
+	margin: 0px; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-weight: bold;
+}
+h3 {
+	margin: 0px; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-weight: bold;
+}
+h4 {
+	margin: 0px; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-weight: bold;
+}
+h5 {
+	margin: 0px; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-weight: bold;
+}
+h1 {
+	padding: 12px 0px 16px; color: rgb(159, 169, 96); text-transform: uppercase; font-size: 14px;
+}
+h2 {
+	padding: 12px 0px; color: rgb(159, 169, 96); text-transform: uppercase; font-size: 11px;
+}
+h1 a {
+	color: rgb(159, 169, 96);
+}
+h2 a {
+	color: rgb(159, 169, 96);
+}
+h3 {
+	padding: 4px 0px 10px 16px; color: rgb(86, 165, 68); font-size: 11px;
+}
+h4 {
+	padding: 4px 0px 6px; color: rgb(86, 165, 68); font-size: 11px;
+}
+h3 a {
+	color: rgb(86, 165, 68);
+}
+h4 a {
+	color: rgb(86, 165, 68);
+}
+h5 {
+	padding: 0px; color: rgb(107, 122, 140); font-size: 11px;
+}
+h5 a {
+	color: rgb(107, 122, 140);
+}
+p {
+	margin: 0px; padding: 9px 0px;
+}
+hr {
+	margin: 0px; padding: 0px; height: 1px; border-top-color: currentColor; border-bottom-color: rgb(181, 188, 197); border-top-width: medium; border-bottom-width: 1px; border-top-style: none; border-bottom-style: solid;
+}
+.top-ln {
+	background-position: left top; height: 15px; color: rgb(255, 255, 255); font-size: 10px; font-weight: bold; background-image: url("top-ln-bg.jpg"); background-repeat: repeat-x;
+}
+.mmenu {
+	background-position: left top; height: 36px; background-image: url("mmenu-bg.gif"); background-repeat: no-repeat;
+}
+.mmenu-links {
+	color: rgb(255, 255, 255);
+}
+.mmenu-links a {
+	color: rgb(255, 255, 255);
+}
+.l-bg {
+	background-position: left top; background-image: url("l-bg.gif"); background-repeat: repeat-y;
+}
+.l-bg2 {
+	background-position: left top; background-image: url("l-bg2.gif"); background-repeat: repeat;
+}
+.news {
+	background-position: left top; padding: 0px 20px; color: rgb(184, 216, 242); font-size: 11px; background-image: url("news-bg2.gif"); background-repeat: no-repeat;
+}
+.news p {
+	color: rgb(184, 216, 242);
+}
+p.date {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-weight: bold;
+}
+p.date a {
+	color: rgb(255, 255, 255);
+}
+.news .text {
+	margin: 0px 0px 32px; padding: 0px; color: rgb(184, 216, 242);
+}
+.news .text a {
+	color: rgb(184, 216, 242);
+}
+.news-bg {
+	background-position: left top; background-image: url("news-bg.gif"); background-repeat: repeat-y;
+}
+.ankets {
+	background-position: left top; background-image: url("ankets-bg.jpg"); background-repeat: no-repeat; background-size: cover;
+}
+.search {
+	border: 1px solid rgb(99, 99, 99); border-image: none; width: 100%; height: 20px; color: rgb(99, 99, 99); font-size: 10px;
+}
+.cards {
+	background-position: left top; height: 232px; background-image: url("cards-bg.gif"); background-repeat: no-repeat; background-size: cover;
+}
+.cards-img {
+	background-position: left top; padding: 3px; background-image: url("ramka.gif"); background-repeat: no-repeat;
+}
+p.stats {
+	margin: 6px 0px; padding: 0px; color: rgb(6, 50, 63);
+}
+.top20-bg {
+	padding: 10px 5px;
+}
+table.forums-bg {
+	background-position: left top; background-image: url("forums-bg.gif"); background-repeat: repeat-y;
+}
+td.forums-bg {
+	background-position: left bottom; padding: 10px 50px 30px 38px; background-image: url("forums-bottom-sh.gif"); background-repeat: no-repeat;
+}
+.bot11 {
+	background-position: left top; width: 302px; height: 146px; background-image: url("bot11.gif"); background-repeat: no-repeat;
+}
+.bot12 {
+	background-position: left top; width: 648px; height: 146px; background-image: url("bot12.gif"); background-repeat: no-repeat;
+}
+.bot21 {
+	background-position: left top; height: 54px; background-image: url("bot21.gif"); background-repeat: no-repeat;
+}
+.votetd {
+	padding: 1px;
+}
+.votebutton {
+	border: 1px solid rgb(99, 99, 153); border-image: none; width: 100px; height: 18px; color: rgb(0, 0, 0); font-size: 9px; background-color: rgb(153, 170, 204);
+}

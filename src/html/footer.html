@@ -14,13 +14,25 @@
 			<div class="social main-footer__social">
 				<ul class="social__list">
 					<li class="social__item">
-						<a class="social__link social__link--vk" href="https://www.vk.com">Вконтакте</a>
+						<a class="social__link social__link--vk" href="https://www.vk.com">
+							<span class="visually-hidden">Вконтакте</span>
+						<!-- <include src="@img/vk.svg"></include> -->
+						@@include('../img/vk.svg', {})
+						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--fb" href="https://www.facebook.com">Фейсбук</a>
+						<a class="social__link social__link--fb" href="https://www.facebook.com">
+							<span class="visually-hidden">Фейсбук</span>
+							<!-- <include src="@img/facebook.svg"></include> -->
+							@@include('../img/facebook.svg', {})
+						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--instagram" href="https://www.instagram.com">Инстаграм</a>
+						<a class="social__link social__link--instagram" href="https://www.instagram.com">
+							<span class="visually-hidden">Инстаграм</span>
+							<!-- <include src="@img/instagram.svg"></include> -->
+							@@include('../img/instagram.svg', {})
+						</a>
 					</li>
 				</ul>
 			</div>

@@ -23,7 +23,8 @@ export const images = () => {
 		}))
 		.pipe(app.gulp.dest(app.path.build.images)) // записываем в результат
 
-		// .pipe(app.gulp.src(app.path.src.svg, {encoding: false})) //получаем svg-картинки
-		// .pipe(app.gulp.dest(app.path.build.images)) //записываем их в результат
+		.pipe(app.gulp.src(app.path.src.svg, {encoding: false})) //получаем svg-картинки
+		.pipe(app.gulp.dest(app.path.build.images)) //записываем их в результат
+
 		.pipe(app.plugins.browsersync.stream());
 }

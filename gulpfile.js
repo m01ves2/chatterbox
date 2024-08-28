@@ -39,13 +39,11 @@ function watcher(){
 // 	gulp.watch(path.watch.images, gulp.series(images, ftp));
 // }
 
-export { svgSprive }; //не нужно здесь постоянно запускать. для единовременного запуска из другого места - в package.json создадим   "scripts": { "svgSprite": "gulp svgSprite" }. теперь запускаем через npm run svgSprite
-
 //последовательная обработка шрифтов
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 //задача по копированию файлов, состоит из параллельно выполняемых задач copy и html
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images, svgSprive));
 
 //построение сценариев выполнения задач
 //сначала копируем файлы, потом включаем наблюдатель

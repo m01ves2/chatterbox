@@ -94,6 +94,10 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 
+input::placeholder{
+	opacity: 50%;
+}
+
 .button {
 	padding: 6px 15px;
 	margin: 0;
@@ -557,22 +561,231 @@ display: block;
 
 
 .modal {
-	width: 300px;
+	padding: 30px;
+	width: 400px;
+
+	position: fixed;
+
+	left: 50%;
+	top: 50%;
+
+	background-color: $white;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+	// margin-left: -200px;
+	transform: translate(-50%, -50%);
+
+	z-index: 2;
+}
+
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	width: 100%;
+
+	background-color: rgba($color: #000000, $alpha: 0.5);
+	z-index: 1;
+
 	display: none;
 }
 
-.modal .form__restore,
-.modal .form__recover {
+.modal__close {
+	@include reset();
+
+	width: 22px;
+	height: 22px;
+
+	font-size: 0;
+
+	position: absolute;
+	top: 0;
+	right: -30px;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 10px;
+		left: 2px;
+
+
+		width: 19px;
+		height: 3px;
+
+		background-color: $grey;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		transform: rotate(-45deg);
+	}
+}
+
+.modal--login {
+	display: none;
+}
+
+.modal--signup {
+	// display: none;
+}
+
+.form .form__restore,
+.form .form__recover {
 	color: $blue-grey;
 	text-decoration: underline;
 }
 
-.modal .form__description {
+.form .form__description {
 	color: $super-light-grey;
+
+	text-align: center;
+}
+
+.modal .form__login,
+.modal .form__password,
+.modal .form__email {
+	box-sizing: border-box;
+
+	width: 260px;
+	padding: 10px 15px;
+	padding-right: 40px;
+
+	border: 1px solid $black;
+	border-radius: 4px;
+}
+
+.modal .form__login {
+	background-image: url("@img/user.svg");
+	background-position: 230px center;
+	background-repeat: no-repeat;
+}
+.modal .form__password {
+	background-image: url("@img/lock.svg");
+	background-position: 230px center;
+	background-repeat: no-repeat;
+}
+
+.modal .form__email {
+	background-image: url("@img/email.svg");
+	background-position: 230px center;
+	background-repeat: no-repeat;
+}
+
+.modal p {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .modal .form__sex {
 	@include list-reset();
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.button--enter {
+	width: 100%;
+}
+
+
+.form__label--checkbox {
+	position: relative;
+	padding-left: 30px;
+
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		color: $yellow;
+	}
+}
+
+.form__label--checkbox .form__checkbox +.form__checkbox-indicator {
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	width: 17px;
+	height: 17px;
+
+	border: 1px solid $black;
+}
+
+.form__label--checkbox .form__checkbox:focus +.form__checkbox-indicator {
+	border-color: $yellow;
+	outline: thin dotted;
+}
+
+.form__label--checkbox .form__checkbox:checked +.form__checkbox-indicator::before,
+.form__label--checkbox .form__checkbox:checked +.form__checkbox-indicator::after {
+	content: "";
+
+	position: absolute;
+	top: 7px;
+	left: 0px;
+
+	width: 15px;
+	height: 2px;
+
+	background-color: $black;
+}
+.form__label--checkbox .form__checkbox:checked +.form__checkbox-indicator::before{
+	transform: rotate(45deg);
+}
+.form__label--checkbox .form__checkbox:checked +.form__checkbox-indicator::after{
+	transform: rotate(-45deg);
+}
+
+.form__label--radio {
+	position: relative;
+	padding-left: 30px;
+
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		color: $yellow;
+	}
+}
+
+.form__label--radio .form__radio +.form__radio-indicator {
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	width: 17px;
+	height: 17px;
+
+	border: 1px solid $black;
+	border-radius: 50%;
+}
+
+.form__label--radio .form__radio:focus +.form__radio-indicator {
+	border-color: $yellow;
+	outline: thin dotted;
+}
+.form__label--radio .form__radio:checked +.form__radio-indicator::after {
+	content: "";
+
+	position: absolute;
+	top: 3px;
+	left: 3px;
+
+	width: 9px;
+	height: 9px;
+
+	background-color: $black;
+	border-radius: 50%;
 }
 
 //--------- chat.html

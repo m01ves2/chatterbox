@@ -1,21 +1,21 @@
 <section class="modal modal--login">
-	<h2 class="modal__header">Вход в личный кабинет</h2>
+	<h2 class="modal__header">Личный кабинет</h2>
 	<form class="form form--login" action="login.html" method="post">
 		<p class="form__description">Введите свой логин и пароль</p>
-		<p>
-			<label for="login" class="form__label visually-hidden">Логин</label>
+		<p class="form__login-block">
+			<label for="login" class="form__label">Логин:</label>
 			<input id="login" class="form__login" type="text" placeholder="логин">
 		</p>
-		<p>
-			<label for="password" class="form__label visually-hidden">Пароль</label>
+		<p class="form__password-block">
+			<label for="password" class="form__label">Пароль:</label>
 			<input id="password" class="form__password" type="password" placeholder="пароль">
 		</p>
-		<p>
-			<input id="remember" class="form__remember visually-hidden" type="checkbox">
-			<span class="form__checkbox-indicator"></span>
-			<label for="remember" class="form__label">Запомнить</label>
-		</p>
-		<p>
+		<p class="form__help">
+			<label for="remember" class="form__label form__label--checkbox">
+				<input id="remember" name="remember" class="form__checkbox visually-hidden" type="checkbox">
+				<span class="form__checkbox-indicator"></span>
+				Запомнить меня
+			</label>
 			<a class="form__restore" href="#">Я забыл пароль!</a>
 		</p>
 		<input type="submit" class="button button--enter" value="Войти">
@@ -31,27 +31,33 @@
 			Только латиница или только кириллица. Пробел заменяется подчеркиванием.
 			Осуществляется премодерация заявок.
 		</p>
-		<p>
-			<label for="login" class="form__label visually-hidden"></label>
+		<p class="form__login-block">
+			<label for="login" class="form__label">Логин:</label>
 			<input id="login" class="form__login" type="text" placeholder="логин">
 		</p>
-		<p>
-			<label for="password" class="form__label visually-hidden"></label>
+		<p class="form__password-block">
+			<label for="password" class="form__label">Пароль:</label>
 			<input id="password" class="form__password" type="password" placeholder="пароль">
 		</p>
-		<p>
-			<label for="email" class="form__label visually-hidden"></label>
+		<p class="form__email-block">
+			<label for="email" class="form__label">Email:</label>
 			<input id="email" class="form__email" type="email" placeholder="почта">
 		</p>
 		<p>
 		<ul class="form__sex">
 			<li>
-				<input id="male" type="radio" name="sex" value="мужчина" checked>
-				<label for="male" class="form__label">мужчина</label>
+				<label for="male" class="form__label form__label--radio">
+					<input class="form__radio visually-hidden" id="male" type="radio" name="sex" value="мужчина" checked>
+					<span class="form__radio-indicator"></span>
+					мужчина
+				</label>
 			</li>
 			<li>
-				<input id="female" type="radio" name="sex" value="женщина">
-				<label for="female" class="form__label">женщина</label>
+				<label for="female" class="form__label form__label--radio">
+					<input class="form__radio visually-hidden" id="female" type="radio" name="sex" value="женщина">
+					<span class="form__radio-indicator"></span>
+					женщина
+				</label>
 			</li>
 		</ul>
 		</p>
@@ -62,3 +68,5 @@
 	</form>
 	<button class="button modal__close" type="button">Закрыть</button>
 </section>
+
+<div class="modal-overlay"></div>

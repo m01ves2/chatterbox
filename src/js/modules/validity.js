@@ -1,54 +1,131 @@
-export var Validity = function () {
+export var CheckLoginValidity = function () {
 
 	var loginModal = document.querySelector('.modal--login');
 	var loginForm = loginModal.querySelector('.form--login');
-	var loginName = loginForm.querySelector('.form__login');
-	var loginPassword = loginForm.querySelector('.form__password');
+	var login = loginForm.querySelector('.form__login');
+	var password = loginForm.querySelector('.form__password');
 
 
-	loginName.addEventListener('invalid', function (evt) {
+	login.addEventListener('invalid', function (evt) {
 		var validityText = '';
-		if (loginName.validity.tooShort) {
+		if (login.validity.tooShort) {
 			validityText = 'Имя должно содержать минимум 3 символа';
 		}
-		else if (loginName.validity.tooLong) {
+		else if (login.validity.tooLong) {
 			validityText = 'Имя должно содержать максимум 25 символов';
 		}
-		else if (loginName.validity.valueMissing) {
+		else if (login.validity.valueMissing) {
 			validityText = 'Обязательное поле';
 		}
 		else{
-			loginName.style.outline = "";
-			loginName.setCustomValidity("");
+			login.style.outline = "";
+			login.setCustomValidity("");
 		}
 
 		if (validityText !== '') {
-			loginName.style.outline = "2px solid red";
-			loginName.setCustomValidity(validityText);
+			login.style.outline = "2px solid red";
+			login.setCustomValidity(validityText);
 		}
 	});
 
-	loginPassword.addEventListener('invalid', function (evt) {
+	password.addEventListener('invalid', function (evt) {
 		var validityText = '';
 
-		if (loginPassword.validity.tooShort) {
+		if (password.validity.tooShort) {
 			validityText = 'Пароль должен содержать минимум 5 символов';
 		}
-		else if (loginPassword.validity.tooLong) {
+		else if (password.validity.tooLong) {
 			validityText = 'Пароль должен содержать максимум 25 символов';
 		}
-		else if (loginPassword.validity.valueMissing) {
+		else if (password.validity.valueMissing) {
 			validityText = 'Обязательное поле';
 		}
 		else{
-			loginPassword.style.outline = "";
-			loginPassword.setCustomValidity("");
+			password.style.outline = "";
+			password.setCustomValidity("");
 		}
 
 
 		if (validityText !== '') {
-			loginPassword.style.outline = "2px solid red";
-			loginPassword.setCustomValidity(validityText);
+			password.style.outline = "2px solid red";
+			password.setCustomValidity(validityText);
+		}
+	});
+}
+
+export var CheckSignupValidity = function () {
+
+	var signupModal = document.querySelector('.modal--signup');
+	var signupForm = signupModal.querySelector('.form--signup');
+	var login = signupForm.querySelector('.form__login');
+	var password = signupForm.querySelector('.form__password');
+	var email =  signupForm.querySelector('.form__email');
+
+
+	login.addEventListener('invalid', function (evt) {
+		var validityText = '';
+		if (login.validity.tooShort) {
+			validityText = 'Имя должно содержать минимум 3 символа';
+		}
+		else if (login.validity.tooLong) {
+			validityText = 'Имя должно содержать максимум 25 символов';
+		}
+		else if (login.validity.valueMissing) {
+			validityText = 'Обязательное поле';
+		}
+		else{
+			login.style.outline = "";
+			login.setCustomValidity("");
+		}
+
+		if (validityText !== '') {
+			login.style.outline = "2px solid red";
+			login.setCustomValidity(validityText);
+		}
+	});
+
+	password.addEventListener('invalid', function (evt) {
+		var validityText = '';
+
+		if (password.validity.tooShort) {
+			validityText = 'Пароль должен содержать минимум 5 символов';
+		}
+		else if (password.validity.tooLong) {
+			validityText = 'Пароль должен содержать максимум 25 символов';
+		}
+		else if (password.validity.valueMissing) {
+			validityText = 'Обязательное поле';
+		}
+		else{
+			password.style.outline = "";
+			password.setCustomValidity("");
+		}
+
+
+		if (validityText !== '') {
+			password.style.outline = "2px solid red";
+			password.setCustomValidity(validityText);
+		}
+	});
+
+	email.addEventListener('invalid', function(evt){
+		var validityText = '';
+
+		if (email.validity.typeMismatch) {
+			validityText = 'Адрес не соответствует реальному';
+		}
+		else if (email.validity.valueMissing) {
+			validityText = 'Обязательное поле';
+		}
+		else{
+			email.style.outline = "";
+			email.setCustomValidity("");
+		}
+
+
+		if (validityText !== '') {
+			email.style.outline = "2px solid red";
+			email.setCustomValidity(validityText);
 		}
 	});
 }

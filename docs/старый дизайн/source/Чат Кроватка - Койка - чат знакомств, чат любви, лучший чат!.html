@@ -11,13 +11,13 @@
 
 <script>
 
-var ch = "sex";
+let ch = "sex";
 
-function bookmark() 
+function bookmark()
 {
-	var title = "Койка Чат (Кроватка2)";
-	var url = "koika.su";
-    		    	
+	let title = "Койка Чат (Кроватка2)";
+	let url = "koika.su";
+
 	alert("Нажмите Ctrl+D чтобы добавить в избранное!");
 }
 
@@ -29,34 +29,34 @@ function help()
 
 function rule()
 {
-	var hwin=window.open('/rules','rules','menubar=no,location=no,resizable=yes,scrollbars=yes,status=no,width=740,height=600');
+	let hwin=window.open('/rules','rules','menubar=no,location=no,resizable=yes,scrollbars=yes,status=no,width=740,height=600');
 	hwin.focus();
 }
 
 function who()
 {
-	
+
 }
 
 function reg()
 {
-	
+
 }
 
 function opnurl(a,b)
 {
-	var pwin=window.open(a,b,"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,width=620,height=460");
+	let pwin=window.open(a,b,"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,width=620,height=460");
 	pwin.focus();
 }
 
 function openInNewTab(url) {
-  var win = window.open(url, '_blank');
+  let win = window.open(url, '_blank');
   win.focus();
 }
 
 function chlink(a)
 {
- 
+
 }
 
 function changech(a)
@@ -65,24 +65,24 @@ function changech(a)
 }
 
 function checkit()
-{		
-	var nn = document.getElementById('inn').value;
+{
+	let nn = document.getElementById('inn').value;
 	ch = document.getElementById("idSelect").value;
-	
+
 	if(nn.length <= 1)
 	{
 		//alert('Введите свой псевдоним (ник) дл\я разговора в чате');
 		//document.getElementById('inn').focus();
 		//return false;
-	} 
+	}
 	else if(ch == "free")
 	{
-		if(!confirm('Внимание! Вы заходите на канал "Свобода". В этом канале разрешена ненормативная лексика.\nВы уверены, что хотите войти?'))	
+		if(!confirm('Внимание! Вы заходите на канал "Свобода". В этом канале разрешена ненормативная лексика.\nВы уверены, что хотите войти?'))
 		ch = 'sex';
 	}
-	
+
 	window.location.href = '/'+ch;
-  
+
 	return true;
 }
 
@@ -165,19 +165,19 @@ function account()
     <tbody>
 		<tr>
 			<td width="233"><img src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/chat11.jpg" alt="" width="233" height="92"></td>
-			<td style="background-image: url(main_files/chat12.gif); background-repeat: no-repeat; background-position: left top;" width="376">		
+			<td style="background-image: url(main_files/chat12.gif); background-repeat: no-repeat; background-position: left top;" width="376">
 			<table cellpadding="0" cellspacing="14" width="100%" border="0">
 				<tbody>
 					<tr>
 						<td><img src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/arr.gif" alt="" width="9" height="9">ВВЕДИТЕ ВАШ НИК В ЧАТЕ:<br></td>
 						<td width="130">
-							<input name="mn" id="inn" value="111" class="search">	
+							<input name="mn" id="inn" value="111" class="search">
 						</td>
 					</tr>
 					<tr>
 						<td><img src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/arr.gif" alt="" width="9" height="9">ВЫБЕРИТЕ КАНАЛ ЧАТА:</td>
 						<td width="130"><select name="wsel" class="search" id="idSelect" onchange="changech(this.options[this.selectedIndex].value)">
-							<option value="sex" class="ks1"> Сексчат (16)</option><option value="znak" class="ks1"> Знакомства (1)</option><option value="flirt" class="ks1"> Флирт (5)</option><option value="free" class="ks1"> Свобода (3)</option><option value="quiz" class="ks1"> Викторина (1)</option><option value="art" class="ks1"> Искусство (2)</option>		
+							<option value="sex" class="ks1"> Сексчат (16)</option><option value="znak" class="ks1"> Знакомства (1)</option><option value="flirt" class="ks1"> Флирт (5)</option><option value="free" class="ks1"> Свобода (3)</option><option value="quiz" class="ks1"> Викторина (1)</option><option value="art" class="ks1"> Искусство (2)</option>
 						</select>
 						</td>
 					</tr>
@@ -186,7 +186,7 @@ function account()
 			</td>
         <td width="112" height="92" background="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/chat13-btn.gif">
 		<input src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/0.gif" title="Войти в чат Кроватка" style="width: 112px; height: 92px; border: 0" width="112" height="92" type="image" onclick="checkit();">
-		</td>			
+		</td>
         <td width="229"><img src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/chat14.jpg" alt="" width="229" height="92"></td>
         <td style="background-image: url(main_files/chat1r.jpg); background-repeat: repeat-x; background-position: left top;" width="*">&nbsp;</td>
       </tr>
@@ -216,8 +216,8 @@ function account()
           <tbody>
 		  <tr>
             <td width="42" valign="top"><img src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/ltop.gif" alt="" width="42" height="137"></td>
-            <td width="260" valign="top"><img src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/news-title.jpg" alt="" width="260" height="137"></td>			
-			
+            <td width="260" valign="top"><img src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/news-title.jpg" alt="" width="260" height="137"></td>
+
           </tr>
 			<tr>
 				<td class="l-bg" width="42" valign="top"><img src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/ltop2.gif" alt="" width="42" height="550"></td>
@@ -244,7 +244,7 @@ function account()
 
 
 
-				
+
 				</td>
 				</tr>
 				</tbody>
@@ -257,15 +257,15 @@ function account()
 			</tr>
 			<tr>
 				<td colspan="2" valign="top"><img src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/links-title.jpg" alt="" width="302" height="94">
-				</td>				
-			</tr>			
+				</td>
+			</tr>
 			<tr>
-				<td colspan="2" style="padding-left: 35px;"><a href="http://check-ip-address.com/ru/index.html" target="_blank"><font color="#DADADA">Сервис проверки IP адресов предоставлен проектом <b>check-ip-address.com</b></font></a></td>				
+				<td colspan="2" style="padding-left: 35px;"><a href="http://check-ip-address.com/ru/index.html" target="_blank"><font color="#DADADA">Сервис проверки IP адресов предоставлен проектом <b>check-ip-address.com</b></font></a></td>
 			</tr>
 			<tr>
             <td valign="top">&nbsp;</td>
             <td valign="top">
-				<ul>            
+				<ul>
 				</ul>
 				<br><br><br><br>
 			</td>
@@ -275,7 +275,7 @@ function account()
 				<td class="stats" height="100%"><p class="stats">Пользователей в чатах: 28</p>
 					<p class="stats"><a target="_blank" rel="noopener noreferrer" href="http://krovatka.hopto.org/feedback"><font color="#06323F"><u>Связь с администрацией</u></font></a></p>
 				</td>
-			</tr>			
+			</tr>
         </tbody>
 		</table>
 		</td>
@@ -316,7 +316,7 @@ function account()
                         <tr>
                           <td valign="middle">
 						  <table cellpadding="3" cellspacing="0" width="100%" border="0">
-                              <tbody>							                               
+                              <tbody>
                               <tr>
                                 <td align="right"><img src="./Чат Кроватка - Койка - чат знакомств, чат любви, лучший чат!_files/tip4.gif" width="6" height="6"></td>
                                 <td><a href="javascript:void(0)" title="(выберите канал чата вверху страницы)">лицензии канала</a></td>
@@ -399,18 +399,18 @@ function account()
 				</tr>
                 <tr>
 					<td class="top20-bg" align="center" valign="top"><br><br><br>
-					
-					</td>                  
+
+					</td>
 				</tr>
 			</tbody>
 			</table>
 			</td>
-			
+
 			</tr>
 		</tbody>
 		</table>
 	</td>
-  </tr>   
+  </tr>
 </tbody>
 </table>
 

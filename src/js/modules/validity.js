@@ -1,13 +1,13 @@
-export var CheckLoginValidity = function () {
+export let CheckLoginValidity = function () {
 
-	var loginModal = document.querySelector('.modal--login');
-	var loginForm = loginModal.querySelector('.form--login');
-	var login = loginForm.querySelector('.form__login');
-	var password = loginForm.querySelector('.form__password');
+	let loginModal = document.querySelector('.modal--login');
+	let loginForm = loginModal.querySelector('.form--login');
+	let login = loginForm.querySelector('.form__login');
+	let password = loginForm.querySelector('.form__password');
 
 
 	login.addEventListener('invalid', function (evt) {
-		var validityText = '';
+		let validityText = '';
 		if (login.validity.tooShort) {
 			validityText = 'Имя должно содержать минимум 3 символа';
 		}
@@ -29,7 +29,7 @@ export var CheckLoginValidity = function () {
 	});
 
 	password.addEventListener('invalid', function (evt) {
-		var validityText = '';
+		let validityText = '';
 
 		if (password.validity.tooShort) {
 			validityText = 'Пароль должен содержать минимум 5 символов';
@@ -53,17 +53,17 @@ export var CheckLoginValidity = function () {
 	});
 }
 
-export var CheckSignupValidity = function () {
+export let CheckSignupValidity = function () {
 
-	var signupModal = document.querySelector('.modal--signup');
-	var signupForm = signupModal.querySelector('.form--signup');
-	var login = signupForm.querySelector('.form__login');
-	var password = signupForm.querySelector('.form__password');
-	var email =  signupForm.querySelector('.form__email');
+	let signupModal = document.querySelector('.modal--signup');
+	let signupForm = signupModal.querySelector('.form--signup');
+	let login = signupForm.querySelector('.form__login');
+	let password = signupForm.querySelector('.form__password');
+	let email =  signupForm.querySelector('.form__email');
 
 
 	login.addEventListener('invalid', function (evt) {
-		var validityText = '';
+		let validityText = '';
 		if (login.validity.tooShort) {
 			validityText = 'Имя должно содержать минимум 3 символа';
 		}
@@ -85,7 +85,7 @@ export var CheckSignupValidity = function () {
 	});
 
 	password.addEventListener('invalid', function (evt) {
-		var validityText = '';
+		let validityText = '';
 
 		if (password.validity.tooShort) {
 			validityText = 'Пароль должен содержать минимум 5 символов';
@@ -109,7 +109,7 @@ export var CheckSignupValidity = function () {
 	});
 
 	email.addEventListener('invalid', function(evt){
-		var validityText = '';
+		let validityText = '';
 
 		if (email.validity.typeMismatch) {
 			validityText = 'Адрес не соответствует реальному';

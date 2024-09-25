@@ -2,13 +2,13 @@ import { messages, users } from './mock.js';
 
 let addMessages = function () {
 
-	var messagesElement = document.querySelector('.messages');
-	var messagesList = messagesElement.querySelector('.all-messages__list');
-	var messageTemplate = messagesElement.querySelector('.message-template')
+	let messagesElement = document.querySelector('.messages');
+	let messagesList = messagesElement.querySelector('.all-messages__list');
+	let messageTemplate = messagesElement.querySelector('.message-template')
 		.content.querySelector('.all-messages__item');
 
-	for (var i = 0; i < messages.length; i++) {
-		var messageElement = messageTemplate.cloneNode(true);
+	for (let i = 0; i < messages.length; i++) {
+		let messageElement = messageTemplate.cloneNode(true);
 
 		messageElement.querySelector('.all-messages__user').textContent = users.find( (u) => u.id == messages[i].user_id).name;
 		messageElement.querySelector('.all-messages__text').textContent = messages[i].text;

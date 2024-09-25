@@ -1,14 +1,14 @@
 let addLoginHandler = function () {
-	var login_open = document.querySelector('.user-navigation__item--login a');
-	var popup = document.querySelector('.modal--login');
-	var login_close = popup.querySelector('.modal__close');
-	var form = popup.querySelector('.form--login');
-	var login = form.querySelector('.form__login');
-	var password = form.querySelector('.form__password');
-	var overlay = document.querySelector('.modal-overlay');
+	let login_open = document.querySelector('.user-navigation__item--login a');
+	let popup = document.querySelector('.modal--login');
+	let login_close = popup.querySelector('.modal__close');
+	let form = popup.querySelector('.form--login');
+	let login = form.querySelector('.form__login');
+	let password = form.querySelector('.form__password');
+	let overlay = document.querySelector('.modal-overlay');
 
-	var isStorageSupport = true;
-	var storageLogin = "";
+	let isStorageSupport = true;
+	let storageLogin = "";
 	try {
 		storageLogin = localStorage.getItem('login');
 	}
@@ -17,19 +17,19 @@ let addLoginHandler = function () {
 	}
 
 
-	var onPopupEscPress = function(evt) {
+	let onPopupEscPress = function(evt) {
 		if(evt.keyCode === 27){
 			closePopup();
 		}
 	}
 
-	var closePopup = function(evt) {
+	let closePopup = function(evt) {
 		popup.classList.remove('modal--show');
 		overlay.classList.remove('modal--show');
 		document.addEventListener('keydown', onPopupEscPress);
 	}
 
-	var openPopup = function(evt) {
+	let openPopup = function(evt) {
 		popup.classList.add('modal--show');
 		overlay.classList.add('modal--show');
 		document.addEventListener('keydown', onPopupEscPress);

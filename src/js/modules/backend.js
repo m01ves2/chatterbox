@@ -1,5 +1,3 @@
-"use strict";
-
 let loadJSONP = function () {
 	let URL = "https://24.javascript.pages.academy/code-and-magick/data";
 	let CALLBACK_NAME = "__jsonpCallback";

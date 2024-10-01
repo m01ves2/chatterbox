@@ -808,6 +808,8 @@ display: block;
 
 //--------- chat.html
 .users {
+	padding: 15px;
+
 	flex-grow: 1;
 	overflow: auto;
 }
@@ -829,6 +831,7 @@ display: block;
 }
 
 .all-messages {
+	padding: 15px;
 	margin-bottom: 15px;
 
 	flex-grow: 1;
@@ -837,4 +840,34 @@ display: block;
 
 .all-messages__list {
 	@include list-reset();
+}
+
+.add-message {
+	padding: 15px;
+}
+
+.form-message {
+	display: flex;
+	align-items: baseline;
+}
+
+.add-message__input {
+	@include reset();
+	display: flex;
+	margin-right: 15px;
+
+	flex-grow: 1;
+}
+
+.add-message__text {
+	flex-grow: 1;
+	margin-left: 15px;
+}
+
+.add-message__edit {
+	@include reset();
+}
+
+.add-message__button {
+	margin-left: auto;
 }

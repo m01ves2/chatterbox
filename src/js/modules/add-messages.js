@@ -11,9 +11,13 @@ let addMessages = function () {
 		let messageElement = messageTemplate.cloneNode(true);
 
 		messageElement.querySelector('.all-messages__user').textContent = users.find( (u) => u.id == messages[i].user_id).name;
+		messageElement.querySelector('.all-messages__user').setAttribute(`id`, messages[i].user_id);
 		messageElement.querySelector('.all-messages__text').textContent = messages[i].text;
+		messageElement.querySelector('.all-messages__time').textContent = messages[i].date;
+		messageElement.querySelector('.all-messages__time').setAttribute('datetime',  messages[i].date);
 
 		messagesList.appendChild(messageElement);
+
 	}
 }
 

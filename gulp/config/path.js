@@ -17,7 +17,7 @@ export const path = {
 		// js: `${srcFolder}/js/app.js`, //всё интересное будет в одном js
 		js: `${srcFolder}/js/*.js`, //все js файлы
 		scss: `${srcFolder}/scss/style.scss`,
-		html: `${srcFolder}/*.html`,
+		html: `${srcFolder}/*.{html,php}`,
 		files: `${srcFolder}/files/**/*.*`,
 		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
 		svg: `${srcFolder}/img/**/*.svg`,
@@ -26,7 +26,7 @@ export const path = {
 	watch: { //папки для наблюдений
 		js: `${srcFolder}/js/**/*.js`,
 		scss: `${srcFolder}/scss/**/*.scss`,
-		html: `${srcFolder}/**/*.html`,
+		html: `${srcFolder}/**/*.{html,php}`,
 		files: `${srcFolder}/files/**/*.*`,
 		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
 	},

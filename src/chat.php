@@ -26,8 +26,8 @@
 							</ul>
 							<template class="message-template">
 								<li class="all-messages__item">
-									<time class="all-messages__time" datetime="2024-09-01"><!--message-time--></time>:
-									<a class="all-messages__user" href="#"><!--user-name--></a>:
+									<time class="all-messages__time" datetime="2024-09-01"><!--message-time--></time> -
+									<a class="all-messages__user" href="#" id="0"><!--user-name--></a>:
 									<span class="all-messages__text"><!--user-message--></span>
 								</li>
 							</template>
@@ -36,7 +36,7 @@
 						<section class="add-message">
 							<form action="chat.html" class="form-message" method="post">
 								<p class="add-message__input">
-									<label class="add-message__label" for="message">User_Name:</label>
+									<label class="add-message__label" for="message">Вы:</label>
 									<input type="hidden" class="add-message__receivers"></span>
 									<input class="add-message__text" type="text" id="message" placeholder="Введите сообщение">
 								</p>

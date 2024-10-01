@@ -30,6 +30,10 @@
 					<section class="news">
 						<h2>Новости</h2>
 						<ul class="news__list">
+						<li class="news__item">
+								<time datetime="2024-10-02">2.10.2024</time>
+								<p>Начали писать серверную часть на php</p>
+							</li>
 							<li class="news__item">
 								<time datetime="2024-10-01">1.10.2024</time>
 								<p>Поправили верстку в чате. Добавили адресата сообщений</p>
@@ -71,7 +75,7 @@
 					<div class="entrance__wrapper">
 						<section class="enter">
 							<h2>Вход в чат</h2>
-							<form class="enter__form form" action="chat.html" method="get">
+							<form class="enter__form form" action="chat.php" method="get">
 								<p>
 									<label for="nickname" class="form__label">Введите ваш ник в чате:</label>
 									<input class="form__nickname" id="nickname" type="text" placeholder="Ник в чате">

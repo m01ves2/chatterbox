@@ -4,6 +4,7 @@ import notify from 'gulp-notify'; //сообщения (подсказки)
 import browsersync from 'browser-sync'; //локальный сервер. открывается страница в браузере, обновляется автоматически при изменениях
 import newer from 'gulp-newer'; //проверка что изображения обновились, и ими нужно заниматься
 import ifPlugin from 'gulp-if'; //условие ветвления - для режима разработки и продакшна
+import connect from 'gulp-connect-php'; //для подключения PHP для обработаки .php файлов (вместо .html)
 
 export const plugins = {
 	replace: replace,
@@ -11,5 +12,6 @@ export const plugins = {
 	notify: notify,
 	browsersync: browsersync,
 	newer : newer,
-	if: ifPlugin
+	if: ifPlugin,
+	connect: connect,
 };

@@ -3,12 +3,12 @@
 	<form class="form form--login" action="login.html" method="post">
 		<p class="form__description">Введите свой логин и пароль</p>
 		<p class="form__login-block">
-			<label for="login" class="form__label">Логин:</label>
-			<input id="login" class="form__login" type="text" placeholder="логин">
+			<label for="login-name" class="form__label">Логин:</label>
+			<input id="login-name" class="form__login" type="text" placeholder="логин" minlength="3" maxlength="25" required>
 		</p>
 		<p class="form__password-block">
-			<label for="password" class="form__label">Пароль:</label>
-			<input id="password" class="form__password" type="password" placeholder="пароль">
+			<label for="login-password" class="form__label">Пароль:</label>
+			<input id="login-password" class="form__password" type="password" placeholder="пароль" minlength="5" maxlength="25" required>
 		</p>
 		<p class="form__help">
 			<label for="remember" class="form__label form__label--checkbox">
@@ -31,17 +31,17 @@
 			Только латиница или только кириллица. Пробел заменяется подчеркиванием.
 			Осуществляется премодерация заявок.
 		</p>
-		<p class="form__login-block">
-			<label for="login" class="form__label">Логин:</label>
-			<input id="login" class="form__login" type="text" placeholder="логин">
+		<p class="form__signup-block">
+			<label for="signup-name" class="form__label">Логин:</label>
+			<input id="signup-name" class="form__login" type="text" placeholder="логин" minlength="3" maxlength="25" required>
 		</p>
 		<p class="form__password-block">
-			<label for="password" class="form__label">Пароль:</label>
-			<input id="password" class="form__password" type="password" placeholder="пароль">
+			<label for="signup-password" class="form__label">Пароль:</label>
+			<input id="signup-password" class="form__password" type="password" placeholder="пароль" minlength="5" maxlength="25" required>
 		</p>
 		<p class="form__email-block">
 			<label for="email" class="form__label">Email:</label>
-			<input id="email" class="form__email" type="email" placeholder="почта">
+			<input id="email" class="form__email" type="email" placeholder="почтовый адрес" required>
 		</p>
 		<p>
 		<ul class="form__sex">

@@ -14,7 +14,8 @@ export const path = {
 		fonts: `${buildFolder}/fonts/`,
 	},
 	src: { //исходники
-		js: `${srcFolder}/js/app.js`, //всё интересное будет в одном js
+		// js: `${srcFolder}/js/app.js`, //всё интересное будет в одном js
+		js: `${srcFolder}/js/*.js`, //все js файлы
 		scss: `${srcFolder}/scss/style.scss`,
 		html: `${srcFolder}/*.html`,
 		files: `${srcFolder}/files/**/*.*`,

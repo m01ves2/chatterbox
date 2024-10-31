@@ -17,7 +17,7 @@ export const path = {
 		// js: `${srcFolder}/js/app.js`, //всё интересное будет в одном js
 		js: `${srcFolder}/js/*.js`, //все js файлы
 		scss: `${srcFolder}/scss/style.scss`,
-		html: `${srcFolder}/*.{html,php}`,
+		html: `${srcFolder}/**/*.{html,php}`,
 		files: `${srcFolder}/files/**/*.*`,
 		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
 		svg: `${srcFolder}/img/**/*.svg`,

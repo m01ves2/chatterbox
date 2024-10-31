@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require_once './functions.php';
 
-@@include('html/head.html', {"title": "Про нас"})
+$page_content = renderTemplate('./templates/pages/about.php', []);
+$title = 'О нас';
 
-<body>
-	<div class="page-wrapper">
-		<main>
-			<div class='field' style="position: relative;">
-				Сижу, пишу какой то код...
-			</div>
-		</main>
-		@@include('html/footer.html', {})
-		@@include('html/modal.html', {})
-	</div>
+$layout_content = renderTemplate('./templates/layout.php',
+    [
+        'title' => $title,
+        'content' => $page_content,
+    ]
+);
+print($layout_content);
 
-	<script type="module" src="./js/app.min.js"></script>
-</body>
-
-</html>
+?>
